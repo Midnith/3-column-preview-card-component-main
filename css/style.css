@@ -1,0 +1,129 @@
+body {
+  background-color: #f2f2f2;
+  color: white;
+  /*fallback color*/
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursiva;
+  color: #f2f2f2;
+}
+
+button {
+  background-color: #f2f2f2;
+  border: none;
+  border: solid 2px;
+  border-color: #f2f2f2;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  margin: 5em 0;
+  padding: 1em 2em;
+  text-align: center;
+}
+
+button:active, button:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+.cars {
+  display: inline-block;
+  font-size: 15px;
+  height: 300px;
+  margin: 0;
+  padding: 2% 2% 5%;
+  text-align: left;
+  width: 210px;
+}
+
+.cars:nth-of-type(1) {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.cars:nth-of-type(3) {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main-container {
+  font-size: 0;
+  /* PREVENT WHITESPACES*/
+  margin: 5% auto;
+  text-align: center;
+}
+
+.sedans {
+  background-color: #e38825;
+}
+
+.suvs {
+  background-color: #006970;
+}
+
+.luxury {
+  background-color: #004241;
+}
+
+.sedans button {
+  color: #e38825;
+}
+
+.suvs button {
+  color: #006970;
+}
+
+.luxury button {
+  color: #004241;
+}
+
+.sedans button:hover, .suvs button:hover, .luxury button:hover {
+  color: #f2f2f2;
+}
+
+@media only screen and (max-width: 375px) {
+
+  /* MOBILE */
+  .main-container {
+    margin: 25% auto;
+  }
+
+  .cars {
+    display: inline-block;
+    height: 300px;
+    margin: 0;
+    padding: 10%;
+    text-align: left;
+    width: 210px;
+  }
+
+  .cars:nth-of-type(1) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .cars:nth-of-type(3) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+  }
+
+  button {
+    margin: 1em 0;
+    padding: .5em 1em;
+  }
+}
+
+.attribution {
+  clear: left;
+  color: grey;
+  display: block;
+  margin: 2% 0;
+}
